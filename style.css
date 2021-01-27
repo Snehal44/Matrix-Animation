@@ -1,0 +1,42 @@
+<style>
+        html {
+            height: 500px;
+        }
+
+        body {
+            background: #000000;
+            min-height: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        div.drop {
+            color: lightgreen;
+            position: absolute;
+            width: 10px;
+            height: 150px;
+            top: 0px;
+            left: 0px;
+            -webkit-animation: drip 20s;
+            /* Safari 4.0 - 8.0 */
+            animation: drip 20s;
+        }
+
+        .leader {
+            color: white;
+        }
+
+        .tail {
+            color: darkgreen;
+        }
+
+        @keyframes drip {
+            from {
+                top: -150px;
+            }
+
+            to {
+                top: 5000px;
+            }
+        }
+    </style>
